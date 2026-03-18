@@ -1,0 +1,140 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "E1 - Premium E-Commerce Architect",
+      "tone": "Trustworthy, Modern, Expensive, Efficient",
+      "theme_strategy": "Archetype 5: Jewel & Luxury (Modernized)",
+      "core_values": ["Fusion", "Emotion", "Content", "Contrast"]
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Outfit, sans-serif",
+        "body": "Plus Jakarta Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "imports": [
+        "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      ],
+      "scale": {
+        "h1": "text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium tracking-tight",
+        "body": "text-base leading-relaxed text-slate-600",
+        "small": "text-sm font-medium text-slate-500 uppercase tracking-wide"
+      }
+    },
+    "colors": {
+      "palette": {
+        "primary": {
+          "DEFAULT": "#0F172A",
+          "foreground": "#F8FAFC",
+          "hover": "#1E293B"
+        },
+        "secondary": {
+          "DEFAULT": "#6D28D9",
+          "foreground": "#FFFFFF",
+          "hover": "#5B21B6"
+        },
+        "accent": {
+          "DEFAULT": "#10B981",
+          "foreground": "#FFFFFF"
+        },
+        "background": {
+          "DEFAULT": "#F8FAFC",
+          "paper": "#FFFFFF",
+          "subtle": "#F1F5F9"
+        },
+        "text": {
+          "primary": "#0F172A",
+          "secondary": "#64748B",
+          "muted": "#94A3B8"
+        },
+        "border": {
+          "DEFAULT": "#E2E8F0",
+          "subtle": "#F1F5F9"
+        },
+        "status": {
+            "success": "#10B981",
+            "warning": "#F59E0B",
+            "error": "#EF4444",
+            "info": "#3B82F6"
+        }
+      },
+      "usage": "Use Primary (Slate 900) for strong actions and headers. Use Secondary (Violet) for branding moments. Use Accent (Emerald) for success states and 'Buy Now' buttons. Backgrounds should be White or very light Slate."
+    },
+    "spacing": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "section_padding": "py-12 md:py-24",
+      "grid_gap": "gap-8"
+    },
+    "shadows": {
+        "card": "shadow-[0_2px_8px_rgba(0,0,0,0.08)]",
+        "hover": "shadow-[0_8px_24px_rgba(0,0,0,0.12)]",
+        "dropdown": "shadow-[0_4px_20px_rgba(0,0,0,0.1)]"
+    },
+    "border_radius": {
+        "card": "rounded-xl",
+        "button": "rounded-lg",
+        "input": "rounded-md"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 rounded-lg font-medium transition-all shadow-lg shadow-primary/20",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/90 h-11 px-8 rounded-lg font-medium transition-all shadow-lg shadow-secondary/20",
+      "outline": "border-2 border-primary text-primary hover:bg-primary/5 h-11 px-8 rounded-lg font-medium transition-colors",
+      "ghost": "text-slate-600 hover:text-primary hover:bg-slate-100 h-10 px-4 rounded-lg font-medium transition-colors"
+    },
+    "cards": {
+      "product": "group relative bg-white border border-slate-100 rounded-xl overflow-hidden hover:shadow-hover transition-all duration-300",
+      "dashboard_stat": "bg-white p-6 rounded-xl border border-slate-100 shadow-card flex flex-col justify-between h-full"
+    },
+    "inputs": {
+      "default": "flex h-11 w-full rounded-md border border-input bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+    }
+  },
+  "layout_strategies": {
+    "customer_landing": {
+      "hero": "Split screen: Left side typography (H1 + CTA), Right side 3D product or high-quality lifestyle image. Or Full-width cinematic background with overlay.",
+      "grid": "Use 'Tetris' Bento Grid for categories (Grid-cols-12). Mix large 2x2 blocks with 1x1 blocks.",
+      "product_list": "Grid-cols-1 sm:grid-cols-2 lg:grid-cols-4. Gap-8."
+    },
+    "admin_dashboard": {
+        "structure": "Sidebar Layout. Fixed Sidebar (w-64) + Scrollable Main Content.",
+        "grid": "Inverted Pyramid. Top row: 4 Key Metrics (Grid-cols-4). Middle: Main Chart (Col-span-3) + Recent Activity (Col-span-1). Bottom: Detailed Tables.",
+        "tables": "Clean rows, sticky header, pagination at bottom right. No vertical borders."
+    }
+  },
+  "images": {
+    "hero_lifestyle": {
+        "url": "https://images.unsplash.com/photo-1635631414456-6a9dc5051a3d?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Modern lifestyle shopping"
+    },
+    "hero_tech": {
+        "url": "https://images.unsplash.com/photo-1705514284469-d32c63e1fbc1?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Professional confident woman"
+    },
+    "product_placeholders": [
+        "https://images.unsplash.com/photo-1606741965509-717b9fdd6549?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1713869791492-50e6b03bf8c7?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1713869816473-b7c2080d9836?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1713869820987-519844949a8a?crop=entropy&cs=srgb&fm=jpg&q=85"
+    ]
+  },
+  "tech_stack_instructions": {
+    "frontend": "React + Vite + Tailwind CSS + Shadcn/UI + Framer Motion + Lucide React + Recharts (Admin) + Sonner (Toasts)",
+    "backend": "FastAPI (Python) + MongoDB (Motor/Pymongo)",
+    "auth": "JWT based. Phone/Email login. Use dummy UPI QR code for checkout.",
+    "pdf": "Use 'jspdf' and 'jspdf-autotable' for client-side invoice generation."
+  },
+  "universal_guidelines": [
+    "Do NOT use gradients for text or buttons unless it is a very subtle brand accent.",
+    "Do NOT center align the app container. Use 'max-w-7xl mx-auto'.",
+    "Use 'sonner' for all toast notifications.",
+    "Add 'data-testid' to all interactive elements.",
+    "Ensure all interactive elements have a clear :hover and :focus state.",
+    "Use 'lucide-react' for icons.",
+    "For the Admin Dashboard, prioritize data density but keep it readable (text-sm for tables).",
+    "For the Customer Store, prioritize visual impact (large images, generous white space)."
+  ]
+}
