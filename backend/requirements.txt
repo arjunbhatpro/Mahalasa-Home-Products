@@ -11,3 +11,5 @@ twilio
 reportlab
 requests
 gunicorn
+flask
+flask-cors
