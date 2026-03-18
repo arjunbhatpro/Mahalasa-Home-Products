@@ -109,12 +109,10 @@ All integrations are currently in mock/demo mode with placeholder credentials. O
 - **Data Validation**: All inputs validated on both frontend and backend
 
 ## 🧪 Quick Test Guide
-
-1. **Visit**: https://shop-hub-633.preview.emergentagent.com
-2. **Register**: Create account with email/phone
-3. **Shop**: Browse 6 sample products
-4. **Checkout**: Try both UPI and COD payment methods
-5. **Admin**: Login with admin credentials to manage orders
+1. **Register**: Create account with email/phone
+2. **Shop**: Browse 6 sample products
+3. **Checkout**: Try both UPI and COD payment methods
+4. **Admin**: Login with admin credentials to manage orders
 
 ## 📝 Notes
 
